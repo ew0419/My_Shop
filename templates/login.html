@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ text }}</title>
+</head>
+<body>
+
+<form action="{{ url }}" method="post">
+     <p>手机号:<input type="text" name="phone"></p>
+    {% if text == '注册' %}
+    <p>用户名:<input type="text" name='name' ></p>
+    {% endif %}
+    <p>密码:<input type="password" name="password"></p>
+    <p><button type="submit">{{ text }}</button></p>
+    {% if text == '注册' %}
+    <p><a href="/user/login">前去登录</a></p>
+    {% else %}
+    <p><a href="/user/register">前去注册</a></p>
+    {% endif %}
+</form>
+</body>
+</html>
