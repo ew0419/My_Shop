@@ -30,7 +30,7 @@ class ShopCart(View):
         user_id = request.session['user_id']
         if user_id:
             user = User.objects.get(id=user_id)
-            order_list = user.orders_set.all()
+            order_list = user.orders_set.get(status=0)
             return render(request, 'shop_cart.html', {'order_list': order_list})
         else:
             return render(request, 'login.html')
@@ -62,5 +62,17 @@ class AddCart(View):
             order.goods = Goods.objects.get(id=goods_id).name
             order.user = User.objects.get(id=user_id).name
             order.price = Goods.objects.get(id=goods_id).price * goods_num
+        else:
+            return render(request, 'login.html')
+
+
+class OrderList(View):
+
+    def get(self, request):
+        user_id = request.session['user_id']
+        if user_id:
+            user = User.objects.get(id=user_id)
+            order_list = user.orders_set.get(status=1)
+            return render(request, 'shop_cart.html', {'order_list': order_list})
         else:
             return render(request, 'login.html')
