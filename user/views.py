@@ -5,6 +5,7 @@ from .tasks import send_code
 from django.views import View
 from django.http.response import JsonResponse
 from django.shortcuts import render, redirect
+from django.contrib.auth.hashers import make_password
 from django.contrib.auth.hashers import check_password
 
 
@@ -67,3 +68,35 @@ class SendCode(View):
         r.set(phone, v_code)
         r.expire(phone, 3000)
         return JsonResponse({'msg': '发送成功'})
+
+
+class AlterPassword(View):
+
+    def get(self, request):
+        return render(request, 'alterpassword.html', {'cerify': ''})
+
+    def post(self, request):
+        _method = request.POST.get('_method')
+        if _method == "put":
+            return self.put(request)
+        phone = request.POST.get('phone')
+        user = User.objects.filter(phone=phone)
+        if not user.exists:
+            return JsonResponse({'msg': '手机号不存在,请前往注册'})
+        r = redis.Redis(host='localhost', port=6379, db=1, decode_responses=True)
+        i_code = request.POST.get('i_code')
+        check_code = r.get(phone)
+
+        if i_code != check_code:
+            return JsonResponse({'msg': '验证码输入有误,请重新输入'})
+        request.session['user'] = user.get(phone=phone).phone
+        return render(request, 'alterpassword.html', {'verify': True})
+
+    def put(self, request):
+        new_password = request.POST.get('new_password')
+        password = make_password(new_password)
+        user = User.objects.get(phone=request.session['user'])
+        user.password = password
+        user.save()
+        print("-----")
+        return redirect('/user/login/')

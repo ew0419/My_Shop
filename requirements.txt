@@ -1,0 +1,6 @@
+django==2.1.8
+celery==4.4.0
+#django-celery==3.3.1
+redis==3.4.1
+requests==2.23.0
+PyMySQL==0.9.3

@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6115f336-e5fd-4d8f-be99-835a3782f916" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/My_Shop/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/My_Shop/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/My_Shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/My_Shop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/My_Shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/My_Shop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/goods/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/tasks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
@@ -21,19 +14,55 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1avskWNT5xaZU9AH1y4ktb1R607" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -47,7 +76,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -110,7 +139,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:db" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:db" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@79cd09ac" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -128,7 +167,9 @@
       <option name="presentableId" value="Default" />
       <updated>1587627544591</updated>
       <workItem from="1587627554373" duration="11714000" />
-      <workItem from="1587704876383" duration="21041000" />
+      <workItem from="1587704876383" duration="24325000" />
+      <workItem from="1587872344455" duration="3107000" />
+      <workItem from="1587875586556" duration="3376000" />
     </task>
     <servers />
   </component>
@@ -136,34 +177,42 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="309" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587728528583">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="309" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1587728528583" />
     <state x="584" y="264" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587638960182">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
     <state x="584" y="264" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1587638960182" />
-    <state x="634" y="272" key="FileChooserDialogImpl" timestamp="1587629854457">
+    <state x="634" y="272" key="FileChooserDialogImpl" timestamp="1587727433929">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state x="634" y="272" key="FileChooserDialogImpl/0.0.1707.1027@0.0.1707.1027" timestamp="1587629854457" />
-    <state width="1055" height="220" key="GridCell.Tab.0.bottom" timestamp="1587724637518">
+    <state x="634" y="272" key="FileChooserDialogImpl/0.0.1707.1027@0.0.1707.1027" timestamp="1587727433929" />
+    <state width="1663" height="441" key="GridCell.Tab.0.bottom" timestamp="1587880310019">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state width="1055" height="220" key="GridCell.Tab.0.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1587724637518" />
-    <state width="1055" height="220" key="GridCell.Tab.0.center" timestamp="1587724637518">
+    <state width="1663" height="441" key="GridCell.Tab.0.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1587880310019" />
+    <state width="1663" height="441" key="GridCell.Tab.0.center" timestamp="1587880310019">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state width="1055" height="220" key="GridCell.Tab.0.center/0.0.1707.1027@0.0.1707.1027" timestamp="1587724637518" />
-    <state width="1055" height="220" key="GridCell.Tab.0.left" timestamp="1587724637517">
+    <state width="1663" height="441" key="GridCell.Tab.0.center/0.0.1707.1027@0.0.1707.1027" timestamp="1587880310019" />
+    <state width="1663" height="441" key="GridCell.Tab.0.left" timestamp="1587880310018">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state width="1055" height="220" key="GridCell.Tab.0.left/0.0.1707.1027@0.0.1707.1027" timestamp="1587724637517" />
-    <state width="1055" height="220" key="GridCell.Tab.0.right" timestamp="1587724637518">
+    <state width="1663" height="441" key="GridCell.Tab.0.left/0.0.1707.1027@0.0.1707.1027" timestamp="1587880310018" />
+    <state width="1663" height="441" key="GridCell.Tab.0.right" timestamp="1587880310019">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state width="1055" height="220" key="GridCell.Tab.0.right/0.0.1707.1027@0.0.1707.1027" timestamp="1587724637518" />
-    <state x="357" y="159" key="SettingsEditor" timestamp="1587712843476">
+    <state width="1663" height="441" key="GridCell.Tab.0.right/0.0.1707.1027@0.0.1707.1027" timestamp="1587880310019" />
+    <state x="357" y="159" key="SettingsEditor" timestamp="1587728491428">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state x="357" y="159" key="SettingsEditor/0.0.1707.1027@0.0.1707.1027" timestamp="1587712843476" />
+    <state x="357" y="159" key="SettingsEditor/0.0.1707.1027@0.0.1707.1027" timestamp="1587728491428" />
+    <state x="465" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1587875593665">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="465" y="348" key="com.intellij.ide.util.TipDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1587875593665" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/My_Shop$Test__templates_.coverage" NAME="Test: templates.登录 Coverage Results" MODIFIED="1587636000716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
